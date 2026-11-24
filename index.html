@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guía para familias · Biblioteca Digital Anthophila</title>
+<meta name="description" content="Qué es la Biblioteca Digital Anthophila, qué desarrolla en su hijo y cómo usarla paso a paso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4fb;--surface:#ffffff;--ink:#1d1b3a;--muted:#555273;--line:#dcd8ee;
+  --indigo:#2a3580;--magenta:#c2185b;--gold:#f2a900;--teal:#0e8a7d;--onindigo:#ffffff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#12112a;--surface:#1c1b3d;--ink:#f0eefb;--muted:#b4b0d4;--line:#38366a;--indigo:#8b97ff;--magenta:#ff7aa8;--gold:#f7c548;--teal:#4cd4c3;--onindigo:#12112a}
+}
+:root[data-theme="dark"]{--bg:#12112a;--surface:#1c1b3d;--ink:#f0eefb;--muted:#b4b0d4;--line:#38366a;--indigo:#8b97ff;--magenta:#ff7aa8;--gold:#f7c548;--teal:#4cd4c3;--onindigo:#12112a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 "Atkinson Hyperlegible",system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.1rem,6.4vw,3.6rem);font-weight:800;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,4.4vw,2.2rem);font-weight:800;margin-bottom:.5rem}
+h3{font-size:1.2rem;font-weight:600;margin-bottom:.25rem}
+p{margin:.4rem 0 1rem;max-width:62ch}
+a{color:var(--indigo)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.band{height:14px;background:repeating-linear-gradient(90deg,var(--indigo) 0 28px,var(--magenta) 28px 44px,var(--gold) 44px 60px,var(--teal) 60px 76px,var(--magenta) 76px 92px)}
+header.hero{padding:44px 0 36px}
+.hero p.lead{font-size:1.25rem;color:var(--muted);margin-top:1.1rem}
+.hero .for{font-weight:700;color:var(--magenta);margin:0 0 .8rem}
+section{padding:40px 0;border-top:1px solid var(--line)}
+.benefits{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:18px 28px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.benefits li{padding-left:16px;border-left:5px solid var(--c,var(--indigo))}
+.benefits li:nth-child(2){--c:var(--magenta)}.benefits li:nth-child(3){--c:var(--teal)}.benefits li:nth-child(4){--c:var(--gold)}.benefits li:nth-child(5){--c:var(--indigo)}.benefits li:nth-child(6){--c:var(--magenta)}
+.benefits p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;margin:1.2rem 0 0;padding:0;counter-reset:s}
+ol.steps>li{counter-increment:s;position:relative;padding:0 0 22px 62px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--indigo);color:var(--onindigo);display:grid;place-items:center;font:800 1.3rem Fraunces,serif}
+ol.steps p{margin:0;color:var(--muted)}
+.tabs{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:1rem}
+.tab{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.tab p{margin:0;font-size:.95rem;color:var(--muted)}
+.tab b{display:block;margin-bottom:2px}
+.callout{background:var(--surface);border:2px solid var(--indigo);border-radius:18px;padding:22px 24px;margin-top:1rem}
+.callout p:last-child{margin-bottom:0}
+.price{font:800 2.4rem Fraunces,serif;color:var(--magenta);line-height:1}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:999px;margin-top:6px}
+:root:not([data-theme="light"]) .btn{color:#0b1a18}
+@media (prefers-color-scheme:light){.btn{color:#fff}}
+.tips{margin:1rem 0 0;padding-left:1.2rem}.tips li{margin-bottom:.6rem;padding-left:.3rem}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:.6rem 0 0;color:var(--muted)}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@page{size:A4 portrait;margin:14mm}
+@media print{
+:root:not(#a):not(#b){--bg:#fff;--surface:#fff;--ink:#1d1b3a;--muted:#444;--line:#cfcbe3;--indigo:#2a3580;--magenta:#c2185b;--gold:#f2a900;--teal:#0e8a7d;--onindigo:#fff;padding:0}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-size:13.5px;line-height:1.5;background:#fff}
+.wrap{max-width:none;padding:0}
+header.hero{padding:10px 0 18px}
+h1{font-size:30px}h2{font-size:22px}h3{font-size:15px}
+p{max-width:none}
+section{padding:18px 0;break-inside:avoid;page-break-inside:avoid}
+h2,h3{break-after:avoid;page-break-after:avoid}
+.tab,.benefits li,ol.steps>li,.callout,details,.tips li{break-inside:avoid;page-break-inside:avoid}
+.tabs{grid-template-columns:repeat(4,1fr)}
+.benefits{grid-template-columns:repeat(2,1fr)}
+.band{height:8px}
+details::details-content{content-visibility:visible;display:block}
+}
+</style>
+</head>
+<body>
+<div class="band" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="for">Guía para madres, padres y apoderados</p>
+    <h1>Su hijo mira, escucha y luego lee el cuento. Usted solo lo acompaña.</h1>
+    <p class="lead">La Biblioteca Digital Anthophila reúne cuentos infantiles para leer y escuchar en línea, con música y videos. Su hijo observa el video, escucha el cuento y luego lo lee.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>¿Qué es la Biblioteca?</h2>
+    <p>Es una página web con tres espacios. Se abre desde el celular, la tablet o la computadora, y no hay que instalar nada.</p>
+    <div class="tabs">
+      <div class="tab"><b>📚 Libros</b><p>Cuentos con texto y narración. Un lector propio, con letra ajustable y barra de progreso.</p></div>
+      <div class="tab"><b>🎵 Música</b><p>Canciones relacionadas con los cuentos.</p></div>
+      <div class="tab"><b>🎬 Videos</b><p>Videos de los cuentos para ver en familia.</p></div>
+    </div>
+    <p style="margin-top:1rem">Los cuentos son de aquí: hay historias de Tacna, Puno, Cusco, Arequipa, Moquegua y la Selva, como <em>La vicuña Killa y el cóndor</em>. También hay cuentos cristianos y variados. Próximamente llega <em>El Misterio del Cañón del Colca</em> (diciembre de 2026).</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Qué desarrolla en su hijo</h2>
+    <p>Estas son las habilidades que se practican al usar la Biblioteca con regularidad.</p>
+    <ul class="benefits">
+      <li><h3>Comprensión lectora</h3><p>Sigue la historia escena por escena y puede conversar sobre lo que pasó.</p></li>
+      <li><h3>Escucha atenta</h3><p>La narración en voz alta le ayuda a captar el ritmo, las palabras nuevas y la entonación.</p></li>
+      <li><h3>Expresión oral</h3><p>Al leer el cuento en voz alta, después de verlo y escucharlo, practica hablar con claridad y seguridad.</p></li>
+      <li><h3>Imaginación y vocabulario</h3><p>Los videos y la narración le dan imágenes y palabras nuevas para imaginar la historia.</p></li>
+      <li><h3>Identidad y cultura</h3><p>Conoce animales, lugares y tradiciones andinas y amazónicas del Perú.</p></li>
+      <li><h3>Hábito lector y autonomía</h3><p>Elige su cuento, ajusta la lectura a su comodidad y avanza a su propio paso.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo usarla, paso a paso</h2>
+    <ol class="steps">
+      <li><h3>Abra la Biblioteca</h3><p>Entre al enlace que recibió. Verá primero las novedades y, debajo, la pestaña <b>Biblioteca de Libros</b>.</p></li>
+      <li><h3>Elija un cuento</h3><p>Toque una portada. Con el botón <b>✨ Nuevos libros</b> verá solo los últimos agregados.</p></li>
+      <li><h3>Lea o escuche</h3><p>Dentro del lector, pulse <b>▶ Escuchar</b> para oír el cuento. Puede cambiar la velocidad (de 0,75× a 1,5×) y dejar marcada la opción para que pase sola a la siguiente escena. Con las flechas ‹ › se cambia de página.</p></li>
+      <li><h3>Ajuste la lectura</h3><p><b>A−</b> y <b>A+</b> cambian el tamaño de letra. Hay tres fondos: claro, sepia y oscuro. El <b>Índice</b> permite saltar de capítulo y la barra inferior muestra cuánto falta.</p></li>
+      <li><h3>Active el acceso completo</h3><p>Una muestra gratuita permite probar el cuento. Para seguir leyendo y escuchar la versión completa con sus actividades, se activa el acceso con un código.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cada cuento tiene su propia ruta</h2>
+    <p>Cada cuento trae una ruta con estaciones y pasos a seguir. Los pasos cambian según el cuento, así que conviene recorrerlos en el orden en que aparecen, hasta llegar a la lectura. El niño observa el video, escucha el cuento y al final lo lee; usted solo lo acompaña.</p>
+    <div class="callout">
+      <h3>🎙️ Voz humana desde la estación 3</h3>
+      <p>A partir de la estación 3 y hasta la lectura, el cuento se escucha con voz humana.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Consejos para acompañarlo</h2>
+    <ul class="tips">
+      <li><b>Pocos minutos, todos los días.</b> Diez a quince minutos valen más que una hora una vez por semana.</li>
+      <li><b>Usted solo acompaña.</b> Su hijo mira el video, escucha el cuento y luego lo lee. Deje que lo haga él y ayúdelo solo si lo necesita.</li>
+      <li><b>Pregunte en medio de la historia.</b> “¿Qué crees que va a pasar?” o “¿Qué hubieras hecho tú?”.</li>
+      <li><b>Celebre cada lectura.</b> Escúchelo leer el cuento completo y dígale qué le gustó.</li>
+      <li><b>Elija cuentos de su región.</b> Reconocer su tierra en una historia lo motiva más.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Necesito internet?</summary><p>Sí. Los cuentos se leen y escuchan en línea, por eso conviene tener una conexión estable.</p></details>
+    <details><summary>¿Para qué edad es?</summary><p>En la actualidad, las lecturas están pensadas para el nivel de 2.º grado de primaria. Se irán incorporando lecturas para más edades.</p></details>
+    <details><summary>¿Puedo probar antes de pagar?</summary><p>Sí. Cada cuento ofrece una muestra gratuita. Cuando termina, aparece el aviso para activar el acceso completo.</p></details>
+    <details><summary>¿Mi hijo está solo en internet?</summary><p>La Biblioteca no tiene chat ni redes sociales. Aun así, acompañe a los más pequeños mientras la usan.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Biblioteca Digital Anthophila · Cuentos para leer, escuchar e imaginar.</div>
+</footer>
+<div class="band" aria-hidden="true"></div>
+<script>
+(function(){var s=[];
+addEventListener('beforeprint',function(){document.querySelectorAll('details').forEach(function(d){s.push([d,d.open]);d.open=true})});
+addEventListener('afterprint',function(){s.forEach(function(x){x[0].open=x[1]});s=[]});
+})();
+</script>
+</body>
+</html>
